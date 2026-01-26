@@ -1,0 +1,11 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/export/route": "/api/export",
+  "/api/import/route": "/api/import",
+  "/api/reembolsos/[id]/route": "/api/reembolsos/[id]",
+  "/api/reembolsos/route": "/api/reembolsos",
+  "/page": "/",
+  "/reembolsos/[id]/page": "/reembolsos/[id]",
+  "/reembolsos/novo/page": "/reembolsos/novo"
+}

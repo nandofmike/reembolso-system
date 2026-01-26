@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Reembolso {
+  id                 String    @id @default(cuid())
+  atribuido          String?
+  data               DateTime?
+  anoReferencia      Int?
+  processo           String?
+  upm                String?
+  beneficiario       String?
+  requerente         String?
+  solicitado         Float?
+  cpfTitular         String?
+  cpfTitularLimpo    String?
+  distribuicao       DateTime?
+  conformidade       DateTime?
+  peg                String?
+  especialidade      String?
+  decisao            String?
+  resultado          String?
+  pagamento          DateTime?
+  ob                 String?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  @@index([processo])
+  @@index([cpfTitularLimpo])
+  @@index([anoReferencia])
+}
