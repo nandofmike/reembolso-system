@@ -1,0 +1,2 @@
+Build trigger - Force Vercel to use latest configuration
+Timestamp: 2026-02-02 18:50:00
