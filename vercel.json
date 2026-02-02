@@ -1,11 +1,12 @@
 {
-  "buildCommand": "pnpm run build",
+  "buildCommand": "pnpm install && pnpm exec prisma generate && pnpm run build",
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "framework": "nextjs",
   "outputDirectory": ".next",
   "env": {
-    "DATABASE_URL": "@database_url"
+    "DATABASE_URL": "file:./dev.db",
+    "NODE_ENV": "production"
   },
   "functions": {
     "api/**/*.ts": {
